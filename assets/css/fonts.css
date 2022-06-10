@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "TTNorms";
+    src: url('../fonts/TTNorms-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TTNorms";
+    src: url('../fonts/TTNorms-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

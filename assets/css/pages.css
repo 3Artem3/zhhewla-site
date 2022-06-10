@@ -1,0 +1,246 @@
+/* Главная */
+main {
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 80px;
+    max-width: 1140px;
+    justify-content: space-between;
+}
+
+main div {
+    max-width: 510px;
+}
+
+.mainTitle {
+    font-size: 48px;
+}
+
+.mainText {
+    margin: 44px 0 24px 0;
+    font-size: 22px;
+    color: #949494;
+}
+
+.offers {
+    margin: 80px auto 160px auto;
+    max-width: 1100px;
+    text-align: center;
+}
+
+.offersTitle {
+    font-size: 48px;
+}
+
+.offersText {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #949494;
+}
+
+.offersContainer {
+    flex-wrap: wrap;
+    display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.offersItem {
+    margin-top: 100px;
+    flex-basis: 28%;
+}
+
+.offersItem div {
+    display: inline-block;
+    margin: auto auto 30px auto;
+    width: 46px;
+    height: 46px;
+    padding: 8px;
+    box-shadow: rgb(0 0 0 / 22%) 0px 11px 40px -7px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.offersItem div img {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.offersItemTitle {
+    margin-bottom: 18px;
+    font-size: 22px;
+}
+
+.offersItemText {
+    font-size: 16px;
+    color: #949494;
+}
+
+/* О нас */
+.about {
+    margin: 40px auto;
+    margin-bottom: 0;
+    max-width: 1140px;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.aboutContainer {
+    position: relative;
+    background-color: white;
+    border-radius: 3px;
+    padding: 58px;
+    padding-bottom: 0;
+    box-shadow: 0 8.666666666666666px 26px 0px rgb(0 0 0 / 10%);
+    border-bottom: 78px solid transparent
+}
+
+.aboutTitle {
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.aboutText {
+    font-size: 22px;
+    color: #949494;
+    line-height: 1.6;
+}
+
+.aboutAvatar {
+    position: absolute;
+    border-radius: 50%;
+    background-size: cover;
+    background-color: white;
+    border: 5px solid white;
+    width: 100px;
+    height: auto;
+    left:0;
+    right:0;
+    margin: 30px auto;
+    margin-bottom: 0;
+}
+
+.aboutAvatarName {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.aboutAvatarText {
+    margin-bottom: 100px;
+    font-size: 14px;
+    color: #949494;
+}
+
+/* Политика конфиденциальности */
+.privacy {
+    margin: 40px auto;
+    margin-bottom: 0;
+    max-width: 1140px;
+    padding-top: 80px;
+    text-align:left;
+}
+
+.privacyContainer {
+    margin-bottom: 120px;
+}
+
+.privacyTitle {
+    text-align: center;
+    font-size: 48px;
+    margin: 40px 0;
+}
+
+.privacyItemTitle {
+    font-size: 28px;
+    margin-bottom: 26px;
+}
+
+.privacyItemText {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.privacyItemText a {
+    color: #e52328;
+}
+
+/* Условия использования */
+.regulations {
+    margin: 80px auto;
+    margin-bottom: 0;
+    max-width: 1140px;
+    padding-top: 80px;
+}
+
+.regulationsTitle {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 48px;
+}
+
+.regulationsItem {
+    margin-bottom: 50px;
+}
+
+.regulationsItemTitle {
+    line-height: 1.2;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.regulationsItemText {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.regulationsItemText a {
+    color: #e52328;
+}
+
+/* Dropdowns */
+.dropdown {
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 0 30px;
+    background-color: white;
+    transition: 0.2s ease-in-out;
+    box-shadow: rgb(0 0 0 / 22%) 0px 11px 40px -7px;
+}
+
+.dropdownTitle {
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+
+.dropdownTitle svg {
+    transition: all 0.2s linear;
+}
+
+.dropdownTitle.dropdownActive svg {
+    transform: rotate(0.5turn);
+}
+
+.dropdownText {
+    border-top: 0 solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    height: 0;
+    padding: 0;
+}
+
+.dropdownText.dropdownActive {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    height: 60px;
+    padding: 20px 0;
+}

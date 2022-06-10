@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+    <title>Sweetize</title>
+    <script src="assets/js/forms.js"></script>
+    <script src="assets/js/slider.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="navContainer">
+            <a href="/"><img src="assets/img/logo.png" alt="Logo" class="navLogo"></a>
+            <div class="navLinks">
+                <a href="about.html" class="navText"><img src="assets/img/book.png" alt="">О нас</a>
+                <!-- <a href="form.html" class="navText"><img src="assets/img/checklist.png" alt="">Заявка</a> -->
+                <a href="https://discord.gg/9wNQgEs3gv" class="btn"><img src="assets/img/arrows.png" alt="">Присоединится</a>
+            </div>
+        </div>
+    </nav>
+
+    <p class="formTitle">Набор в команду</p>
+    <section class="form">
+        <div id="succesModal" class="formModalSucces hidden">
+            <div class="formModelSuccesContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" id="Bold" viewBox="0 0 8 8" width="100" height="100"><path d="M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z"/></svg>
+                <p class="formModalSuccesTitle">Успех</p>
+                <p class="formModalSuccesText">Заявка была успешно отправлена</p>
+            </div>
+            
+        </div>
+        <div class="formContainer">
+            <div class="formStep">
+                <p>1 из 4</p>
+                <div class="formSectionline"></div>
+                
+                <p class="formSectionTitle">Напишите Ваши данные</p>
+                <div>
+                    <p class="formItemText">Имя *</p>
+                    <input type="text" id="formName" class="formInput">
+                </div>
+                <div>
+                    <p class="formItemText">Никнейм и тег *</p>
+                    <input type="text" id="formTag" class="formInput">
+                </div>
+                <div>
+                    <p class="formItemText">Город проживания *</p>
+                    <input type="text" id="formCity" class="formInput">
+                </div>
+                <div>
+                    <p class="formItemText">Год рождения *</p>
+                    <input type="text" id="formYear" class="formInput">
+                </div>
+                <p class="formSectionDescription"><a href="privacy.html">Ваши персональные данные</a> не будут переданы третьим лицам</p>
+                <button class="formNext">Далее</button>
+            </div>
+            <div class="formStep">
+                <p>2 из 4</p>
+                <div class="formSectionline"></div>
+                <p class="formSectionTitle">Сколько часов Вы можете быть в активности</p>
+                <div class="slider">
+                    <div class="sliderContainer">
+                        <div class="sliderMin sliderLabel">1</div>
+                        <div class="sliderMax sliderLabel">24</div>
+                        <div class="sliderSize"></div>
+                    </div>
+                    <div>
+                        <div class="sliderBackground"></div>
+                        <div class="sliderProgress"></div>
+                        <input id="slider" class="sliderInput" type="range" min="1" max="24" value="1"/>
+                    </div>
+                </div>
+                <button class="formReturn">Назад</button>
+                <button class="formNext">Далее</button>
+            </div>
+            <div class="formStep">
+                <p>3 из 4</p>
+                <div class="formSectionline"></div>
+                <p class="formSectionTitle">Выберите роль</p>
+                <div>
+                    <input name="checkboxModer" id="moder" type="checkbox" class="formInput">
+                    <label for="moder">Модератор</label>
+                </div>
+                <div>
+                    <input name="checkboxHelper" id="helper" type="checkbox" class="formInput">
+                    <label for="helper">Помощник</label>
+                </div>
+                <div>
+                    <input name="checkboxevEventer" id="eventer" type="checkbox" class="formInput">
+                    <label for="eventer">Ивентер</label>
+                </div>
+                <button class="formReturn">Назад</button>
+                <button class="formNext">Далее</button>
+            </div>
+            <div class="formStep">
+                <p>4 из 4</p>
+                <div class="formSectionline"></div>
+                <p class="formSectionTitle">Напишите как бы Вы поступили с нарушителем</p>
+                <div>
+                    <textarea name="text" id="textArea" cols="30" rows="10"></textarea>
+                </div>
+                <button class="formReturn">Назад</button>
+                <button class="formSubmit" onclick="submit()">Отправить</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footerContainer">
+            <a href="/"><img src="assets/img/logo.png" alt="Logo" class="navLogo"></a>
+            <div class="footerItems">
+                <a href="privacy.html"><img src="assets/img/page.png" alt="">Политика конфиденциальности</a>
+                <a href="regulations.html"><img src="assets/img/page.png" alt="">Условия использования</a>
+                <a href="https://discord.com/channels/947837163310026762/950973222810185738" target="_blank" rel="noopener"><img src="assets/img/case.png" alt="">Служба поддержки</a>
+            </div>
+        </div>
+        <p>© 2022 «Sweetize». Все права защищены.</p>
+    </footer>
+    <!-- Код был написан Apexo#0723 (LegionerRI) -->
+</body>
+</html>
